@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .full-page
+    {
+        height: 100%;
+        width: 100%;
+        background-color: darkorange;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+    ::selection{
+        color: #000;
+        background: #fff;
+    }
+    .fullContainer {
+        width: 100%;
+    }
+    .container{
+        width: 1340px;
+        margin: auto;
+    }
+    header{
+        width: 100%;
+        background-color: black;
+        position: fixed;
+        z-index: 2;
+        padding: 10px 0;
+    }
+    header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    header .container .logo{
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    header .container .logo img{
+        height: 100%;
+    }
+    header vav ul{
+        list-style-type: none;
+    }
+    header nav ul li{
+        display: inline-block
+    }
+    header nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    header nav ul li a:hover{
+        background: darkorange;
+        color: black;
+    }
+
+    /* PRODUCTS PAGE */
+    #services-container {
+        margin: 34px;
+        display: flex;
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        background-color: white;
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+    }
+    .price {
+        color: #000;
+        font-size: 20px;
+    }
+    .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    /* ADD TO CART PAGE */
+    .class1{
+        max-width: 400px;
+        width: 100%;
+        margin: 120px;
+        background-color: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    }
+    .class1 .title{
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+    }
+    
+    .button{
+        height: 45px;
+        margin: 35px 0;
+    }
+    .button input{
+        height: 100%;
+        width: 45%; 
+        border-radius: 5px;
+        border: none;
+        color: #000;
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: darkorange;
+    }
+
+    /* PAYMENT PAGE */
+    .class{
+        max-width: 700px;
+        width: 100%;
+        margin: 120px;
+        background-color: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    }
+    .class .title{
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+    }
+    .class .title::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 30px;
+        border-radius: 5px;
+    }
+    .content form .user-details{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 10px 0 12px 0;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: calc(100% / 2 - 20px);
+    }
+    form .input-box span.details{
+        text-align: left;
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .user-details .input-box input{
+        height: 45px;
+        width: 100%;
+        outline: none;
+        font-size: 16px;
+        border-radius: 5px;
+        padding-left: 15px;
+        border: 1px solid #ccc;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+    }
+    .user-details .input-box input:focus,
+    .user-details .input-box input:valid{
+        border-color: darkorange;
+    }
+    form .button{
+        height: 45px;
+        margin: 35px 0;
+    }
+    form .button input{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        color: #000;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: darkorange;
+    }
+
+    /* CONTACT PAGE */
+    .tab-space {
+        padding-left: 100px;
+    }  
+    .form {
+        display: flex;
+        justify-content: space-between;
+        margin: 80px 0;
+    }
+    .form .form-txt {
+        flex-basis: 48%;
+    }
+    .form .form-txt p {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 15px 0;
+        color: black;
+    }
+    .form .form-details {
+        flex-basis: 48%;
+    }
+    .form .form-details input[type="text"],
+    .form .form-details input[type="email"] {
+        padding: 20px 25px;
+        color: gray;
+        outline: none;
+        border: 1px solid gray;
+        margin: 35px 15px;
+        font-size: 14px;
+    }
+    .form .form-details textarea {
+        padding: 20px 20px;
+        margin: 0 15px;
+        color: gray;
+        outline: none;
+        border: 1px solid gray;
+        font-size: 16px;
+        resize: none;
+    }
+    .form .form-details button {
+        padding: 15px 25px;
+        color: white;
+        font-weight: 500;
+        background-color: black;
+        outline: none;
+        border: none;
+        margin: 15px;
+        font-size: 14px;
+        letter-spacing: 2px;
+        cursor: pointer;    
+    }

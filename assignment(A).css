@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .full-page
+    {
+        height: 100%;
+        width: 100%;
+        background-image: url(https://www.printasia.in/media/catalog/product/a/-/a-b-1_computer_shopr_.jpg);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+    ::selection{
+        color: #000;
+        background: #fff;
+    }
+    .fullContainer {
+        width: 100%;
+    }
+    .container{
+        width: 1340px;
+        margin: auto;
+    }
+    header{
+        width: 100%;
+        background-color: black;
+        position: fixed;
+        z-index: 2;
+        padding: 10px 0;
+    }
+    header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    header .container .logo{
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    header .container .logo img{
+        height: 100%;
+    }
+    header vav ul{
+        list-style-type: none;
+    }
+    header nav ul li{
+        display: inline-block
+    }
+    header nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    header nav ul li a:hover{
+        background: darkorange;
+        color: black;
+    }
+
+    /* MAIN PAGE */
+    .tab-space {
+        padding-left: 80px;
+    }
+    #t1 {
+        tab-size: 1;
+    }
+
+    /* LOG IN PAGE */
+    .class{
+        max-width: 400px;
+        width: 100%;
+        margin: 120px;
+        background-color: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    }
+    .class .title{
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+    }
+    .class .title::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 30px;
+        border-radius: 5px;
+    }
+    .content form .user-details{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 10px 0 12px 0;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: calc(100% / 1 - 20px);
+    }
+    form .input-box span.details{
+        text-align: left;
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .user-details .input-box input{
+        height: 45px;
+        width: 100%;
+        outline: none;
+        font-size: 16px;
+        border-radius: 5px;
+        padding-left: 15px;
+        border: 1px solid #ccc;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+    }
+    .user-details .input-box input:focus,
+    .user-details .input-box input:valid{
+        border-color: darkorange;
+    }
+    form .button{
+        height: 45px;
+        margin: 35px 0;
+    }
+    form .button input{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        color: #000;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: darkorange;
+    }
+
+    /* SIGN UP PAGE */
+    .class1{
+        max-width: 700px;
+        width: 100%;
+        margin: 120px;
+        background-color: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    }
+    .class1 .title{
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+    }
+    .class1 .title::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 30px;
+        border-radius: 5px;
+    }
+    .content form .user-details1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 10px 0 12px 0;
+    }
+    form .user-details1 .input-box{
+        margin-bottom: 15px;
+        width: calc(100% / 2 - 20px);
+    }
+    form .input-box span.details{
+        text-align: left;
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .user-details1 .input-box input{
+        height: 45px;
+        width: 100%;
+        outline: none;
+        font-size: 16px;
+        border-radius: 5px;
+        padding-left: 15px;
+        border: 1px solid #ccc;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+    }
+    .user-details1 .input-box input:focus,
+    .user-details1 .input-box input:valid{
+        border-color: darkorange;
+    }
+    form .button{
+        height: 45px;
+        margin: 35px 0
+    }
+    form .button input{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        color: #000;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: darkorange;
+    }
+
+    /* HOME PAGE */
+    .tab-space {
+        padding-left: 100px;
+    }
+    .tab-space button {
+        padding: 15px 25px;  
+        font-weight: 500;
+        background-color: black;
+        outline: none;
+        border: none;
+        margin: 15px;
+        font-size: 14px;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }

@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT PAGE</title>
+    <link rel="stylesheet" href="assignment(B).css">
+</head>
+<body>
+    <div class="full-page">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <p>MY COMPUTER ACCESSORIES SHOP</p> 
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="products.html">PRODUCTS</a></li>
+                        <li><a href="addtocart.html">YOUR CARTS</a></li>
+                        <li><a href="contact.html">CONTACTS</a></li>
+                        <li><a href="mainpage.html">LOG OUT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <center>
+            <div class="class"> 
+                <div class="title">PAYMENT INFORMATION</div> <br><br>
+                <div class="content">
+                    <form id="paymentForm">
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">FULL NAME</span>
+                                <input type="text" placeholder="Enter Your Full Name" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">ADDRESS</span>
+                                <input type="text" placeholder="Enter Your Shipping Address" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">NAME ON CARD</span>
+                                <input type="text" placeholder="Enter Your Name on Card" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">CREDIT CARD NUMBER</span>
+                                <input type="text" placeholder="Enter Your Credit Card Number" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">EXPIRY DATE (MM/YY)</span>
+                                <input type="month" placeholder="Enter Your Expiry Date" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">CVV</span>
+                                <input type="text" placeholder="Enter Your CVV" required>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <input type="submit" name="submit" value="SUBMIT PAYMENT">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </center>
+    </div>
+    <script>
+        document.getElementById('paymentForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent form from submitting the normal way
+            
+            // Simulate successful payment
+            alert('Payment successful!!! Your order is being processed. Please give your feedback.');
+            
+            // Clear cart after payment
+            localStorage.removeItem('cart');
+            window.location.href = "contact.html";  // Direct to the contacts page
+        });
+    </script>
+</body>
+</html>
